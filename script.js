@@ -1,5 +1,5 @@
 //let은 변화가능한 변수 const는 바뀔수 없는 변수
-const c = 5;
+/*const c = 5;
 const d = 7;
 
 // 배열
@@ -37,13 +37,20 @@ function power(a, b) {
 
 
 //조건문은 이렇게 설정한다.
-
+//값을 받고 숫자로 바꿈
 const age = parseInt(prompt("write your age"));
 if (isNaN(age)) {
     alert("다시 입력하세요");
 } else {
     alert("your age is" + age);
 }
+*/
 //document 객체를 사용하여 html에 있는 요소를 끌고올수 있다.
 const title = document.getElementById("title");
 title.innerText = "hi!";
+
+function click1() {
+    title.style.color = "blue";
+}
+
+title.addEventListener("click",click1())
