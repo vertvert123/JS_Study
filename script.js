@@ -1,39 +1,49 @@
-/*const c = 5;
+//let은 변화가능한 변수 const는 바뀔수 없는 변수
+const c = 5;
 const d = 7;
-const e = ["a","b","c"];
-const calculator ={
-    add : function (a,b) {
-        return(a+b);
+
+// 배열
+const e = ["a", "b", "c"];
+console.log(e[1]);
+
+// 클래스는 이렇게 생성한다.
+const calculator = {
+    add: function (a, b) {
+        return (a + b);
     },
-    name : "star"
-    
-    
+    name: "star"
+
+
 };
 
-function power(a,b) {
-    return(a**b);
-}
-const human = {
-    body : "big",
-    hand : "small",
-    leg : "long"
-}
-const value = calculator.add(c,d);
+const value = calculator.add(c, d);
 console.log(calculator.name);
 console.log(value);
-const value2 = power(c,d);
+
+const human = {
+    body: "big",
+    hand: "small",
+    leg: "long"
+}
+
+const value2 = power(c, d);
 console.log(value2);
 console.log(human)
-console.log(e[1]);
+
+// 함수는 이렇게 만든다.
+function power(a, b) {
+    return (a ** b);
+}
+
+
+//조건문은 이렇게 설정한다.
+
 const age = parseInt(prompt("write your age"));
-if(isNaN(age)){
+if (isNaN(age)) {
     alert("다시 입력하세요");
+} else {
+    alert("your age is" + age);
 }
-else{
-alert("your age is"+age);
-}
-
-*/
-const title = document.getElementById("title")
+//document 객체를 사용하여 html에 있는 요소를 끌고올수 있다.
+const title = document.getElementById("title");
 title.innerText = "hi!";
-
