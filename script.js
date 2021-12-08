@@ -36,3 +36,4 @@ alert("your age is"+age);
 */
 const title = document.getElementById("title")
 title.innerText = "hi!";
+
