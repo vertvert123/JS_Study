@@ -1,7 +1,5 @@
-h2 {
-    color: pink;
-
-    font-style: italic;
+.active {
+    color: "blue";
 }
 
 body {

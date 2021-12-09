@@ -46,11 +46,18 @@ if (isNaN(age)) {
 }
 */
 //document 객체를 사용하여 html에 있는 요소를 끌고올수 있다.
-const title = document.getElementById("title");
-title.innerText = "hi!";
+const title = document.querySelector(".hello h1");
 
-function click1() {
-    title.style.color = "blue";
+/*function click2() {
+    const currentColor = title.style.color;
+    let newColor;
+    if(currentColor==="blue"){
+        newColor="red";
+    }
+    else{
+        newColor="blue";
+    }
+    title.style.color = newColor;
 }
-
-title.addEventListener("click",click1())
+title.addEventListener("click",click2);
+*/
