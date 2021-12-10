@@ -1,5 +1,5 @@
 //let은 변화가능한 변수 const는 바뀔수 없는 변수
-/*const c = 5;
+const c = 5;
 const d = 7;
 
 // 배열
@@ -44,20 +44,19 @@ if (isNaN(age)) {
 } else {
     alert("your age is" + age);
 }
-*/
+
 //document 객체를 사용하여 html에 있는 요소를 끌고올수 있다.
 const title = document.querySelector(".hello h1");
 
-/*function click2() {
+//이벤트
+function click2() {
     const currentColor = title.style.color;
     let newColor;
-    if(currentColor==="blue"){
-        newColor="red";
-    }
-    else{
-        newColor="blue";
+    if (currentColor === "blue") {
+        newColor = "red";
+    } else {
+        newColor = "blue";
     }
     title.style.color = newColor;
 }
-title.addEventListener("click",click2);
-*/
+title.addEventListener("click", click2);
